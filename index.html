@@ -16,26 +16,26 @@
                     <h6>Bill</h6>
                     <h6 class="error-message" id="bill-error-message"> Can't be negative or zero</h6>
                 </div>
-                <input id="bill-charge" name="bill-charge" type="number" placeholder="0"/>
+                <input id="bill-charge" name="bill-charge" type="number" placeholder="0" oninput="billInput()"/>
                 <div class="select-tip-section">
                     <div class="heading">
                         <h6>Select tip %</h6>
                         <h6 class="error-message" id="tip-error-message"> Can't be negative </h6>
                     </div>
                     <div class="tip-options">
-                        <button class="tip-value" value="5">
+                        <button class="tip-value" value="5" onclick="tipInput(event)">
                           5%
                         </button>
-                        <button class="tip-value" value="10">
+                        <button class="tip-value" value="10" onclick="tipInput(event)">
                           10%
                         </button>
-                        <button class="tip-value" value="15">
+                        <button class="tip-value" value="15" onclick="tipInput(event)">
                           15%
                         </button>
-                        <button class="tip-value" value="25">
+                        <button class="tip-value" value="25" onclick="tipInput(event)">
                           25%
                         </button>
-                        <button class="tip-value" value="50">
+                        <button class="tip-value" value="50" onclick="tipInput(event)">
                           50%
                         </button>
                         <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom" class="tip-value"/>
@@ -45,9 +45,9 @@
                 <div class="people-count-section">
                     <div class="heading">
                         <h6>NUmber of People</h6>
-                    <h6 class="error-message" id="bill-error-message"> Can't be negative or zero</h6>
+                    <h6 class="error-message" id="people-error-message"> Can't be negative or zero</h6>
                     </div>
-                    <input type="number" id="people-count" name="people-count" placeholder="0">
+                    <input type="number" id="people-count" name="people-count" placeholder="0" oninput="peopleInput(event)">
                 </div>
             </div>
             <div class="right-container">
@@ -68,6 +68,6 @@
         </div>
     </main>
 
-    <script src="./script.js" async></script>
+    <script src="/scriptt.js" async></script>
 </body>
 </html>
